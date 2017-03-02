@@ -1,0 +1,1009 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+a {
+    color: cornflowerblue;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 55px;
+    width: 14%;
+    min-width: 4em;
+    font-family: arial;
+    color: white;
+    background-color: darkorange;
+    text-align: center;
+    font-size: 2em;
+    float: left;
+    margin-top: 0%;
+    /*display: inline-block;*/
+    padding: 0.8%;
+}
+
+.content {
+    padding-top: 0px;
+}
+
+.user-content {
+    display: inline-block;
+    height: 4.5em;
+    font-size: 14px;
+    /*border: solid 1px black;*/
+    /* margin-top: 1.9%; */
+    margin-left: .5%;
+    width: 85%;
+}
+
+.user-content p:nth-of-type(1) {
+    float: left;
+    /*border: solid 1px black;*/
+}
+
+.user-content p:nth-of-type(2) {
+    float: right;
+    /*border: solid 1px black;*/
+}
+
+.user-content p:nth-of-type(2) strong {
+    font-size: 16px;
+    /*border: solid 1px black;*/
+}
+
+.user-content p:nth-of-type(2) img {
+    height: 2.8%;
+    width: 8%;
+}
+
+.user-content a {
+    color: red;
+}
+
+.top-header-menu {
+    /*border: solid 1px black;*/
+    width: 100%;
+    min-width: 15em;
+    height: 5%;
+    float: right;
+    text-align: right;
+}
+
+.top-header-menu a img {
+    height: 9.8px;
+    width: 9.8px;
+}
+
+.top-header-menu a {
+    font-size: 15px;
+    display: inline;
+    color: darkblue;
+    text-decoration: none;
+}
+
+.top-header-menu a::after {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    color: grey;
+    content: '|';
+}
+
+.top-header-menu a:nth-last-of-type(1)::after {
+    content: '';
+}
+
+.top-header-menu p {
+    font-size: .8em;
+    text-align: right;
+    padding-top: 0px;
+    padding-right: 3.5em;
+}
+
+.top-header-menu strong {
+    font-size: 1.3em;
+}
+
+.lower-header-bar {
+    min-height: 3em;
+    width: 100%;
+    /*margin: 1.3% auto;*/
+    /*border: solid 1px black;*/
+}
+
+.search-box {
+    display: inline-block;
+    border: solid 1px #D3D3D3;
+    border-bottom: 0px;
+    width: 100%;
+    min-height: 3em;
+    background-color: #F2F0F0;
+}
+
+.lower-header-bar strong {
+    margin-left: 2%;
+    margin-right: .6%;
+}
+
+
+/*.select-godies {
+    width: 10%;
+    min-width: 10em;
+    height: 1.9em;
+}*/
+
+
+/*+++++++++++++++++++++++++++++++++++++++select-goodies style++++++++++++++++++++++++++++++++++++++++++++*/
+
+.selectdiv {
+    position: relative;
+    min-width: 11em;
+    display: inline-block;
+}
+
+
+/* IE11 hide native button  */
+
+select::-ms-expand {
+    display: none;
+}
+
+.selectdiv:after {
+    content: '<>';
+    font: 17px "Consolas", monospace;
+    color: #333;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    left: 7.9em;
+    /*Adjust for position however you want*/
+    top: 11px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid #999;
+    /*left line */
+    position: absolute;
+    pointer-events: none;
+}
+
+.selectdiv select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    /*appearance: none;*/
+    /* Add some styling */
+    /*display: block;*/
+    width: 100%;
+    max-width: 10em;
+    height: 30px;
+    /*float: right;*/
+    margin: 8px 0px;
+    padding: 0px 24px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #333;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    -ms-word-break: normal;
+    word-break: normal;
+    border-radius: 5px;
+    background: white;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#DCDCDC, white);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#DCDCDC, white);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#DCDCDC, white);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#DCDCDC, white);
+    /* Standard syntax */
+}
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.search-textbox {
+    margin: 5px;
+    width: 40%;
+    height: 2.5em;
+    margin-right: .333%;
+    min-width: 12em;
+    border: solid 2px orange;
+}
+
+.search-button {
+    width: 5em;
+    height: 2.5em;
+    font-size: 0.9em;
+    background-color: orange;
+    color: white;
+    border: solid 1px orange;
+    border-radius: 5px;
+}
+
+.basket-box {
+    float: right;
+    /* border: 1px solid black; */
+    width: 10%;
+    min-width: 8em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.basket {
+    width: 100%;
+    height: 2.7em;
+    font-size: .8em;
+    padding-left: 3.2em;
+    border-radius: 5px;
+    background: white;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(white, #DCDCDC);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, #DCDCDC);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, #DCDCDC);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, #DCDCDC);
+    /* Standard syntax */
+    background-image: url("../images/basket.png");
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 3px;
+    background-size: 25px;
+    /*font-size: 12px;*/
+}
+
+.lower-header-up-content {
+    border: solid 1px grey;
+    background-color: #F2EFEF;
+}
+
+.lower-header-menu {
+    border: solid 1px #D3D3D3;
+    min-height: 2.5em;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #F2F0F0;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, white, #F2F0F0);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, white, #F2F0F0);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, white, #F2F0F0);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, white, #F2F0F0);
+    /* Standard syntax */
+}
+
+.lower-header-menu a {
+    text-decoration: none;
+    color: black;
+    /*padding: 5px 10px 5px 10px;*/
+    text-align: center;
+}
+
+.lower-header-menu a::after {
+    content: '|';
+    padding-left: 5px;
+    color: grey;
+}
+
+.lower-header-menu select {
+    height: 25px;
+    font-size: 14px;
+    border: 0px;
+    outline: 0px;
+    padding-left: 1.4%;
+}
+
+#talkbubble {
+    width: 120px;
+    height: 150px;
+    background: #F2F0F0;
+    border: solid 1px #F2F0F0;
+    position: relative;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    motion-rotation: 90;
+    -ms-transform: rotate(270deg);
+    /* IE 9 */
+    -webkit-transform: rotate(270deg);
+    /* Safari */
+    transform: rotate(270deg);
+    margin: auto;
+}
+
+#talkbubble:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 40%;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 21px solid #F2F0F0;
+    border-bottom: 15px solid transparent;
+}
+
+section p {
+    margin-left: .5%;
+}
+
+section h3 {
+    color: orange;
+    margin-left: .5%;
+}
+
+section .in-active {
+    border: 1px solid grey;
+    height: 8em;
+    width: 10em;
+    border-radius: 15px;
+    display: inline-block;
+    bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+section .active {
+    height: 8em;
+    width: 10em;
+    border-radius: 15px;
+    display: inline-block;
+    position: relative;
+    background: #F2F0F0;
+}
+
+.hideText {
+    display: inline;
+    text-align: center;
+    margin: auto;
+}
+
+#left {
+    float: left;
+    color: red;
+    padding-top: 3%;
+    text-align: center;
+}
+
+#right {
+    float: right;
+    color: green;
+    padding-top: 3%;
+    text-align: center;
+}
+
+#center {
+    color: orange;
+    padding-top: 3%;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+section .in-active strong,
+section .active strong {
+    font-size: 3em;
+}
+
+section .active:before {
+    content: "";
+    position: absolute;
+    right: 45%;
+    top: 95%;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-right: 21px solid #F2F0F0;
+    border-bottom: 15px solid transparent;
+    -ms-transform: rotate(270deg);
+    /* IE 9 */
+    -webkit-transform: rotate(270deg);
+    /* Safari */
+    transform: rotate(270deg);
+}
+
+section .orders-tab {
+    width: 100%;
+}
+
+section .orders-tab li {
+    list-style: none;
+    display: inline-block;
+    /*border: 1px solid grey;*/
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 10em;
+}
+
+section .orders-tab li strong {
+    font-family: arial;
+}
+
+section .orders-tab li:nth-of-type(1) {
+    float: right;
+    width: 31em;
+    min-width: 19em;
+}
+
+section .orders-tab li:nth-of-type(2) {
+    /*color: red;*/
+    width: 32em;
+    padding-top: 1%;
+    text-align: center;
+}
+
+section .order-search-header {
+    width: 100%;
+    height: 3em;
+    border: 1px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-top: 2%;
+    background: white;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, white, #F2F0F0);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, white, #F2F0F0);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, white, #F2F0F0);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, white, #F2F0F0);
+    /* Standard syntax */
+}
+
+section .order-search-header strong {
+    font-size: 1em;
+    margin-left: 1%;
+}
+
+section .order-number {
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+section .order-number input[type=button] {
+    width: 2.5em;
+    height: 2em;
+    background-image: url(../images/search.png);
+    background-repeat: no-repeat;
+    background-position-y: -4px;
+    background-size: 29px;
+    background-color: #F2F0F0;
+}
+
+section .order-number input[type=text] {
+    width: 8em;
+    height: 2em;
+    padding: 5px;
+    border: solid 1px grey;
+}
+
+section .range {
+    float: right;
+    /*border: solid 1px black;*/
+    margin-top: 5%;
+    margin-right: 2%;
+}
+
+section .range input[type=date] {
+    width: 9.5em;
+    height: 2em;
+    border: solid 1px grey;
+}
+
+section .range input[type=button] {
+    width: 2.5em;
+    height: 2em;
+    background-image: url(../images/search.png);
+    background-repeat: no-repeat;
+    background-position-y: -4px;
+    background-size: 29px;
+    background-color: #F2F0F0;
+}
+
+section .order-search-body {
+    width: 100%;
+    min-height: 7em;
+    border: 1px solid black;
+    border-top: 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.order-details {
+    border: solid 1px black;
+    background-color: #D7D3D3;
+    width: 90%;
+    margin: 25px auto;
+}
+
+.dates-cancel {
+    display: inline-block;
+}
+
+.dates-cancel h2 {
+    display: inline-block;
+    font-size: 18px;
+    margin: 14px;
+}
+
+.order-details input[type=button] {
+    display: block;
+    margin: auto .5em;
+    background-color: red;
+    box-shadow: 5px 5px 2px black;
+    border: 0px;
+    height: 25px;
+    color: white;
+    font-family: bold;
+    font-size: 20px;
+    width: 9em;
+    /*Image style*/
+    padding-left: 24px;
+    background-image: url(../images/x.png);
+    background-repeat: no-repeat;
+    background-position-x: 3px;
+    background-position-y: 0px;
+    background-size: 25px;
+}
+
+.wallet {
+    float: right;
+    font-family: bold;
+    margin: 1em;
+    font-weight: bold;
+}
+
+.parcel-tab {
+    display: block;
+    width: 90%;
+    margin: 5em 5%;
+}
+
+.parcel-button {
+    float: left;
+    width: 17%;
+    min-width: 10em;
+    min-height: 10em;
+    padding-top: 15px;
+    border: solid 1px black;
+    background-color: white;
+    border: solid 3px #B8860B;
+    border-right: solid 0px #B8860B;
+    text-align: center;
+    font-weight: bold;
+}
+
+.star-seller {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.star-seller img {
+    width: 20px;
+    margin: auto 3px;
+    float: left;
+}
+
+.parcel-processing {
+    border: solid 3px #B8860B;
+    min-height: 20em;
+    width: 83%;
+    background-color: white;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.parcel-processing .heading1 {
+    display: inline-block;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.heading1 img {
+    float: right;
+    width: 27%;
+    margin-left: -10px;
+}
+
+.parcel-processing .heading2 {
+    float: right;
+    min-height: 4em;
+    background-color: #D7D3D3;
+    /* padding-top: 5em; */
+    width: 45%;
+    min-width: 15.12222em;
+    font-weight: bold;
+}
+
+.parcel-processing .heading2 a {
+    margin: 5px;
+}
+
+.parcel-processing .heading2 label {
+    font-weight: normal;
+    color: grey;
+}
+
+.truck-img {
+    width: 10%;
+    float: left;
+    margin-left: 5%;
+    /*margin: auto 10px;*/
+}
+
+.parcel-processing .heading2 p {
+    margin: .5em;
+    float: none;
+}
+
+.parcel-button input[type=button] {
+    margin-top: 1em;
+    background-color: red;
+    box-shadow: 5px 5px 2px black;
+    border: 0px;
+    height: 25px;
+    color: white;
+    font-family: bold;
+    font-size: 20px;
+    width: 90%;
+    /*Image style*/
+    padding-left: 27px;
+    background-image: url(../images/x.png);
+    background-repeat: no-repeat;
+    background-position-x: 3px;
+    background-position-y: 0px;
+    background-size: 25px;
+}
+
+.stock-table {
+    display: table;
+    width: 95%;
+    margin-left: 2em;
+    /*border: solid 1px black;*/
+}
+
+.stock-row {
+    display: table-row;
+}
+
+.stock-cell {
+    display: table-cell;
+    border-bottom: solid 2px grey;
+    padding-top: 3em;
+}
+
+.stock-cell img {
+    /*height: 50%;*/
+    width: 4em;
+    float: left;
+}
+
+.i-image img {
+    background-position-y: 10px;
+    width: 10%;
+    height: 15px;
+    float: none;
+}
+
+.bill-table {
+    display: table;
+    width: 18em;
+    float: right;
+    margin-right: 19%;
+}
+
+.bill-row {
+    display: table-row;
+}
+
+.bill-cell {
+    display: table-cell;
+}
+
+.bill-cell:nth-of-type(even) {
+    text-align: right
+}
+
+.bill-cell:nth-of-type(odd) {
+    text-align: right
+}
+
+.green {
+    border: solid 3px green;
+}
+
+.green1 {
+    border: solid 3px green;
+    border-right: solid 0px green;
+}
+
+.brief-details-container {
+    min-height: 10em;
+    border: solid 1px #D7D3D3;
+    margin: 15px auto;
+}
+
+.brief-details-table {
+    width: 100%;
+    min-height: 5em;
+    display: table;
+    -webkit-padding-start: 0px;
+}
+
+.brief-details-table li {
+    display: table-cell;
+    width: 20%;
+    float: left;
+    border-right: solid 1px #D7D3D3;
+}
+
+.brief-details-table li:nth-of-type(5) {
+    border-right: 0px;
+}
+
+.brief-details-cells {
+    min-width: 100%;
+    padding-left: 10%;
+    height: 8em;
+    margin: 2px;
+}
+
+.brief-details-cells img {
+    height: 8%;
+    width: 8%;
+    float: left;
+}
+
+.payment-details ul {
+    display: table;
+}
+
+.payment-details ul li:nth-of-type(1) {
+    width: 5em;
+    padding-bottom: 0px;
+}
+
+.payment-details ul li:not(:nth-of-type(1)) {
+    margin-left: 8px;
+}
+
+.payment-details ul li {
+    width: 5em;
+    height: 2.5em;
+    display: table-cell;
+    float: left;
+}
+
+.payment-details img {
+    height: 100%;
+    width: 100%;
+}
+
+.contact-terms p {
+    display: inline-block;
+    padding-left: 3%;
+    margin-top: -5px;
+}
+
+.contact-terms img {
+    float: right;
+    /*height: 8%;*/
+    width: 8em;
+}
+
+@media(max-width:1200px) {
+    .user-content {
+        width: 100%;
+    }
+    /* Fitting tabs and search box*/
+    section .orders-tab {
+        border: 1px solid grey;
+        width: 100%;
+        -webkit-padding-start: 0px;
+        text-align: center;
+    }
+    section .orders-tab li:nth-of-type(1) {
+        float: none;
+        width: 31em;
+        min-width: 19em;
+        /* -webkit-padding-start: 40px; */
+    }
+    section .orders-tab li:nth-of-type(2) {
+        /* color: red; */
+        width: 32em;
+        padding-top: 1%;
+        text-align: center;
+    }
+    /*++++++++++++++++++++++++++++ Fitting orders details ++++++++++++++++++++++++++++++++++++++++++++*/
+    .parcel-button {
+        float: none;
+        width: 100%;
+        min-width: 10em;
+        min-height: 8em;
+        padding-top: 1em;
+        border: solid 1px black;
+        padding-top: 0px;
+        background-color: white;
+        border: solid 3px #B8860B;
+        border-bottom: solid 0px #B8860B;
+    }
+    .parcel-processing {
+        border: solid 3px #B8860B;
+        min-height: 20em;
+        width: 100%;
+        background-color: white;
+        display: inline-block;
+        margin-bottom: 1em;
+    }
+    .green {
+        border: solid 3px green;
+    }
+    .green1 {
+        border: solid 3px green;
+        border-bottom: solid 0px green;
+    }
+    .order-details {
+        border: solid 1px black;
+        background-color: #D7D3D3;
+        width: 100%;
+        margin: 25px auto;
+    }
+    .stock-cell {
+        display: table-cell;
+        border-bottom: solid 2px grey;
+        padding-top: 3em;
+        min-width: 4em;
+    }
+    /*++++++++++++++++++++++++++++ +++++++++++++++++++Fitting table +++++++++++++++++++++++++++++++++++++++++*/
+    .stock-table {
+        display: table;
+        width: 100%;
+        margin-left: 0em;
+        /*border: solid 1px black;*/
+    }
+    /*Fitting Brief details table footer*/
+    .brief-details-table li {
+        min-width: 20em;
+        float: left;
+        border-right: solid 1px #D7D3D3;
+    }
+    .brief-details-table li:nth-of-type(5) {
+        border-right: solid 1px #D7D3D3;
+    }
+    .brief-details-table li:nth-of-type(5) img {
+        width: 20px;
+    }
+}
+
+@media(max-width:785px) {
+    /*         fitting upper tool bar box      */
+    .search-textbox {
+        width: 70%;
+        height: 2.5em;
+        min-width: 5em;
+    }
+    section .order-number input[type=button] {
+        width: 4em;
+        background-position-x: .7em;
+    }
+    section .range input[type=button] {
+        width: 9em;
+        background-position-x: 3.2em;
+        margin: 2px auto;
+        display: block;
+    }
+    .basket-box {
+        width: 98%;
+        min-width: 8em;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
+    .search-button {
+        width: 25%;
+        float: none;
+    }
+    /* fitting tabs and search box */
+    section .range input[type=date] {
+        display: inline-block;
+        margin: 2px auto;
+    }
+    section .orders-tab li:nth-of-type(1) {
+        float: none;
+        width: 50%;
+        margin: 4em auto;
+        min-width: 15em;
+        /* -webkit-padding-start: 40px; */
+    }
+    section .order-number {
+        display: block;
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+    section .range {
+        float: none;
+        margin-top: 0%;
+        margin-right: 0%;
+        text-align: center;
+    }
+    section .orders-tab li:nth-of-type(2) {
+        width: 95%;
+        margin: auto;
+    }
+    #left {
+        width: 30%;
+        min-width: 5em;
+    }
+    #center {
+        width: 30%;
+        min-width: 5em;
+    }
+    #right {
+        width: 30%;
+        min-width: 4.5em;
+    }
+    .hideText {
+        visibility: hidden;
+        position: relative;
+    }
+    .hideText:after {
+        visibility: visible;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "Critical orders";
+    }
+    /* fitting order table */
+    .stock-cell:nth-of-type(1) {
+        width: 100%;
+        border: solid 2px grey;
+        /*border-bottom: 0px;*/
+        height: 10em;
+        text-align: center;
+    }
+    .stock-cell {
+        text-align: center;
+        float: left;
+        width: 25%;
+        min-width: 7.555555em;
+        height: 8em;
+        border: solid 2px grey;
+        border-left: 0px;
+        border-top: 0px;
+    }
+    .stock-cell:nth-of-type(2) {
+        border-left: solid 2px grey;
+    }
+    /*+++++++++++++++++++++++++++++++++++++fitting stock costing table details+++++++++++++++++++++++++++++++++++++++++++++++*/
+    .bill-table {
+        width: 100%;
+        float: none;
+    }
+    .bill-cell:nth-of-type(even) {
+        text-align: left;
+        padding: 5px;
+    }
+    .bill-cell:nth-of-type(even) {
+        padding: 5px;
+    }
+    /*+++++++++++++++++++++++fitting brief table++++++++++++++++++++++++++++++++ */
+    .brief-details-table li {
+        min-width: 100%;
+        border-right: 0px;
+    }
+    .brief-details-table li:nth-of-type(5) {
+        border-right: 0px;
+    }
+}

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="sheets/exercise.css" rel="stylesheet">
+    <link href="sheets/modal.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="upper-header-bar">
+            <div class="top-header-menu">
+                <a href="#"> Sign In</a>
+                <a href="#">Register</a>
+                <a href="#">Account</a>
+                <a href="#">Orders</a>
+                <a href="#">Help</a>
+                <a class="removeline" href="#"><img src="images/orange-square.png" /> Sell your stuff</a>
+
+            </div>
+            <div class="logo">
+                <div class="content">Logo</div>
+            </div>
+            <div class="user-content">
+                <p><strong>Welcome Bobby!!</strong><br> Don't forget that <a href="#">you have R250.08 voucher</a></p>
+                <p>Quesions about your order?
+                    <Br>Phone us on<strong> 0861 525242</strong><img src="images/phone.png" />
+                </p>
+            </div>
+        </div>
+        <div class="lower-header-bar">
+
+            <div class="search-box">
+                <strong>Find</strong>
+                <div class="selectdiv">
+                    <label>
+                    <select>
+                        <option>All Godies</option>
+                        <option>Godie 1</option>
+                        <option>Godie 2</option>
+                        <option>Godie 3</option>
+                    </select>
+                    </label>
+                </div>
+
+                <input name="search-textbox" class="search-textbox" type="text" />
+                <input name="search-button" class="search-button" type="button" value="Search" />
+
+                <div class="basket-box">
+                    <select class="basket">
+                        <option value="5">Basket(5)</option>
+                        <option value="10">Basket (10)</option>
+                        <option value="15">Basket (15)</option>
+                        <option value="20">Basket (20)</option>
+                        <option value="25">Basket (25)</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="lower-header-menu">
+            <a><select class="shops-menu">
+                    <option>All Shops</option>
+                    <option>shop1</option>
+                    <option>shop2</option>
+                    <option>shop3</option>
+                    <option>shop4</option>
+                    </select>
+                    </a>
+            <a href="#">Books</a>
+            <a href="#">Music</a>
+            <a><select class="movies-menu">
+                <option>All Movies</option>
+                <option>movie 1</option>
+                <option>movie 2</option>
+                </select></a>
+            <a href="#">Games</a>
+            <a href="#">Electronics</a>
+            <a href="#">Photography</a>
+            <a href="#">Digital Downloads</a>
+        </div>
+        </div>
+    </header>
+    <section>
+        <p>Home>Account><strong>Order List</strong></p>
+        <h3>Order List</h3>
+        <ul class="orders-tab">
+            <li>
+                <div class="order-search-header">
+                    <strong>Search by order number or by date</strong>
+                </div>
+                <div class="order-search-body">
+                    <div class="order-number"> Order number:<br>
+                        <input type="text" placeholder="#123456" />
+                        <input type="button" value=" " />
+                    </div>
+                    <div class="range">Date range:<br>
+                        <input type="date" placeholder="CCYY-MM-DD" />
+                        <input type="date" placeholder="CCYY-MM-DD" />
+                        <input type="button" value=" " />
+                    </div>
+                </div>
+
+            </li>
+            <li>
+                <div class="in-active" id="left">
+                    <strong>1</strong><br>
+                    <p class="hideText"> orders needs your attention</p>
+                </div>
+
+                <div class="active" id="center">
+                    <strong>2</strong><br>orders in progress</div>
+
+                <div class="in-active" id="right">
+                    <strong>2</strong><br>closed orders</div>
+            </li>
+        </ul>
+
+        <div class="order-details">
+            <div class="dates-cancel">
+                <h2>Ordered on: 18th January 2013</h2> order #187897
+                <input type="button" value="Cancel order">
+            </div>
+            <div class="wallet">
+                Credit used:R - 300.00
+                <Br> Order total:R - 1500.00
+            </div>
+            <div class="parcel-tab">
+
+                <div class="parcel-button">
+                    Digital #190082-1
+                    <input type="button" value="Cancel parcel" />
+                </div>
+
+                <div class="parcel-processing">
+                    <div class="heading1">Processing<img src="images/i.png" /></div>
+                    <div class="heading2 ">
+                        <img class="truck-img" src="images/truck.png" />
+                        <p>Estimated delivery date: 14 February2013</p>
+                        <label>Method:</label>
+                        <a href="#">Courier</a>
+                        <a href="#address-modal">View/Change address </a>
+                        <div id="address-modal" class="modalDialog">
+                            <div class="modal-body">
+                                <a href="#close" title="Close" class="close">X</a><br>
+                                <form name="modal-form" method="POST" action="#">
+                                    <label class="caption" for="addressName">Address Name:</label><input class="caption-text" id="addressName" placeholder="Address Name" type="text" />
+                                    <label class="caption" for="addressLine1">Address Line 1:</label><input class="caption-text" id="addressLine1" placeholder="Address Line 1" type="text" />
+                                    <label class="caption" for="addressline2">Address Line 2:</label><input class="caption-text" id="addressline2" placeholder="Address Line 1" type="text" />
+                                    <label class="caption" for="city">City/Suburb:</label><input class="caption-text" id="city" placeholder="City/Suburb" type="text" />
+                                    <label class="caption" for="province">Province:</label><input class="caption-text" id="province" placeholder="Province" type="text" />
+                                    <label class="caption" for="contryCode">Country code:</label><input class="caption-text" id="contryCode" placeholder="Country code" type="text" />
+                                    <label class="caption" for="postCode">Postcode/Zip:</label><input class="caption-text" id="postCode" placeholder="Postcode/Zip" type="text" />
+                                    <input type="submit" value="Submit" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stock-table">
+                        <div class="stock-row">
+                            <div class="stock-cell"><img src="images/cross.png" /><a href="#">4x4 routes in Namibia</a>
+                                <p>Hard Cover</p>
+                            </div>
+                            <div class="stock-cell"><strong>x1</strong></div>
+                            <div class="stock-cell">In stock</div>
+                            <div class="stock-cell">R 250.00</div>
+                            <div class="stock-cell"><a href="#">Cancel</a></div>
+                        </div>
+                        <div class="stock-row">
+                            <div class="stock-cell"><img src="images/cross.png" /><a href="#">Hard can it be?</a>
+                                <p>Paperback</p>
+                            </div>
+                            <div class="stock-cell"><strong>x2</strong></div>
+                            <div class="stock-cell">Ordered from suplier</div>
+                            <div class="stock-cell">R 150.00</div>
+                            <div class="stock-cell"><a href="#">Cancel</a></div>
+                        </div>
+                        <div class="stock-row">
+                            <div class="stock-cell"><img src="images/cross.png" /><a href="#">It can be quite hard</a>
+                                <p>Hard Cover</p>
+                            </div>
+                            <div class="stock-cell"><strong>x1</strong></div>
+                            <div class="stock-cell">Ordered from suplier</div>
+                            <div class="stock-cell">R 250.00</div>
+                            <div class="stock-cell"><a href="#">Cancel</a></div>
+                        </div>
+                    </div><br>
+                    <div class="bill-table">
+                        <div class="bill-row">
+                            <div class="bill-cell">Sub total:</div>
+                            <div class="bill-cell">R 450.00</div>
+                        </div>
+                        <div class="bill-row">
+                            <div class="bill-cell">Delivery cost:</div>
+                            <div class="bill-cell">Free</div>
+                        </div>
+                        <div class="bill-row">
+                            <div class="bill-cell">Parcel total:</div>
+                            <div class="bill-cell">R 150.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="parcel-tab">
+
+                <div class="parcel-button green1">
+                    Digital #190082-2<br>
+                    <div class="star-seller"> <img src="images/star.png"><a href="#">Rate this seller</a></div>
+                    <input type="button" value="Cancel parcel" />
+                </div>
+
+                <div class="parcel-processing green">
+                    <div class="heading1">Processing<img src="images/i.png" /></div>
+                    <div class="heading2">
+                        <img class="truck-img" src="images/truck.png" />
+                        <p> delivery date: 29 Jannuary 2013</p>
+                        <label>Method:</label>
+                        <a href="#">Courier</a>
+                        <a href="#address-modal">View/Change address </a>
+                        <div id="address-modal" class="modalDialog">
+                            <div class="modal-body">
+                                <a href="#close" title="Close" class="close">X</a><br>
+                                <form name="modal-form" method="POST" action="#">
+                                    <label class="caption" for="addressName">Address Name:</label><input class="caption-text" id="addressName" placeholder="Address Name" type="text" />
+                                    <label class="caption" for="addressLine1">Address Line 1:</label><input class="caption-text" id="addressLine1" placeholder="Address Line 1" type="text" />
+                                    <label class="caption" for="addressline2">Address Line 2:</label><input class="caption-text" id="addressline2" placeholder="Address Line 1" type="text" />
+                                    <label class="caption" for="city">City/Suburb:</label><input class="caption-text" id="city" placeholder="City/Suburb" type="text" />
+                                    <label class="caption" for="province">Province:</label><input class="caption-text" id="province" placeholder="Province" type="text" />
+                                    <label class="caption" for="contryCode">Country code:</label><input class="caption-text" id="contryCode" placeholder="Country code" type="text" />
+                                    <label class="caption" for="postCode">Postcode/Zip:</label><input class="caption-text" id="postCode" placeholder="Postcode/Zip" type="text" />
+                                    <input type="submit" value="Submit" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stock-table">
+                        <div class="stock-row">
+                            <div class="stock-cell"><img src="images/cross.png" /><a href="#">i Pad 364 GB</a>
+                                <p>Apple</p>
+                            </div>
+                            <div class="stock-cell"><strong>x1</strong></div>
+                            <div class="stock-cell">In stock</div>
+                            <div class="stock-cell">R 13 675.00</div>
+                            <div class="stock-cell"><a href="#">Cancel</a></div>
+                        </div>
+
+                    </div><br>
+                    <div class="bill-table">
+                        <div class="bill-row">
+                            <div class="bill-cell">Sub total:</div>
+                            <div class="bill-cell">R 13 675.00</div>
+                        </div>
+                        <div class="bill-row">
+                            <div class="bill-cell">Delivery cost:</div>
+                            <div class="bill-cell">R 40.00</div>
+                        </div>
+                        <div class="bill-row">
+                            <div class="bill-cell">Parcel total:</div>
+                            <div class="bill-cell">R 13 705.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="order-details">
+            <div class="dates-cancel">
+                <h2>Ordered on: 15th January 2013</h2> order #187854
+                <input type="button" value="Cancel order">
+            </div>
+            <div class="wallet">
+                Credit used:R - 300.00
+                <Br> Order total:R - 13 855.00
+            </div>
+            <div class="parcel-tab">
+
+                <div class="parcel-button">
+                    Digital #189085-1
+                    <input type="button" value="Cancel parcel" />
+                </div>
+
+                <div class="parcel-processing">
+                    <div class="heading1">In-progress<img src="images/i.png" /></div>
+                    <!--<div class="heading2">
+                        Estimated delivery date: 14 February2013
+                    </div>-->
+                    <div class="stock-table">
+                        <div class="stock-row">
+                            <div class="stock-cell"><img src="images/cross.png" /><a href="#">Harry Potter -  The Deathly Hallows</a>
+                                <p>eBook</p>
+                            </div>
+                            <div class="stock-cell i-image"><a href="#">Ready for download</a><img src="images/download.png" /></div>
+                            <div class="stock-cell">R 175.00</div>
+                            <div class="stock-cell"></div>
+                        </div>
+                        <div class="stock-row">
+                            <div class="stock-cell"><img src="images/cross.png" /><a href="#">Jerry Games -  The The Wacky Marshmellows</a>
+                                <p>eBook</p>
+                            </div>
+                            <div class="stock-cell i-image">Processing<img src="images/i.png" /></div>
+                            <div class="stock-cell">R 175.00</div>
+                            <div class="stock-cell"><a href="#">Cancel</a></div>
+                        </div>
+
+                    </div><br>
+                    <div class="bill-table">
+                        <div class="bill-row">
+                            <div class="bill-cell">Sub total:</div>
+                            <div class="bill-cell">R 350.00</div>
+                        </div>
+                        <div class="bill-row">
+                            <div class="bill-cell">Delivery cost:</div>
+                            <div class="bill-cell">Free</div>
+                        </div>
+                        <div class="bill-row">
+                            <div class="bill-cell">Parcel total:</div>
+                            <div class="bill-cell">R 350.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="parcel-tab">
+
+                <div class="parcel-button green1">
+                    Digital #189085-1<br>
+                    <div class="star-seller"> <img src="images/star.png"><a href="#">Rate this seller</a></div>
+                    <div class="star-seller"> <img src="images/backarrow1.png"><a href="#">Request refund</a></div>
+
+                    <a href="#"></a>
+
+                </div>
+
+                <div class="parcel-processing green">
+                    <div class="heading1">Dispatched<img src="images/i.png" /></div>
+                    <div class="heading2">
+                        <img class="truck-img" src="images/truck.png" />
+                        <p> Estimated delivery date: 25 Jannuary 2013</p>
+                        <label>Tracking number:</label>
+                        <a href="#">96723kth87</a>
+                    </div>
+                    <div class="stock-table">
+                        <div class="stock-row">
+                            <div class="stock-cell"><img src="images/cross.png" /><a href="#">i Phone 5 64 GB</a>
+                                <p>Apple</p>
+                            </div>
+                            <div class="stock-cell"><strong>x1</strong></div>
+                            <div class="stock-cell">Dispatched</div>
+                            <div class="stock-cell">R 13 675.00</div>
+                            <!--<div class="stock-cell"><a href="#">Cancel</a></div>-->
+                        </div>
+
+                    </div><br>
+                    <div class="bill-table">
+                        <div class="bill-row">
+                            <div class="bill-cell">Sub total:</div>
+                            <div class="bill-cell">R 13 675.00</div>
+                        </div>
+                        <div class="bill-row">
+                            <div class="bill-cell">Delivery cost:</div>
+                            <div class="bill-cell">R 40.00</div>
+                        </div>
+                        <div class="bill-row">
+                            <div class="bill-cell">Parcel total:</div>
+                            <div class="bill-cell">R 13 705.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="brief-details-container">
+            <ul class="brief-details-table">
+                <li>
+                    <div class="brief-details-cells">
+                        <strong>Quick Links</strong>
+                        <p>
+                            Need help ?<br> Where is my order?<br> Delivery Information<br> Contact us
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="brief-details-cells">
+                        <strong>Services</strong>
+                        <p>
+                            Payment Options<br> Our guarantee<br> Competitions
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="brief-details-cells">
+                        <strong>Account Information</strong>
+                        <p>
+                            My profile<br> Newsletter subscriptions<br> Change my password<br> Register a corporate account
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="brief-details-cells">
+                        <strong>Make money</strong>
+                        <p>
+                            Earn rewards<br>Affiliate program<br> Sell your stuff<br> Contact us
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="brief-details-cells">
+                        <strong>Stay in touch</strong>
+                        <p>
+                            <img src="images/fb.png" />join us on Facebook
+                            <br><img src="images/twitter.png" /> Follow us on twitter
+                            <br><img src="images/youtube.png" /> Visit us on Youtube
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="payment-details">
+            <ul>
+                <li><strong>We accept</strong></li>
+                <li><img src="images/visa.png" /></li>
+                <li><img src="images/mastercard.png" /></li>
+                <li><img src="images/american-express.png" /></li>
+                <li><img src="images/diners.png" /></li>
+                <li><img src="images/bank.png" /></li>
+                <li><img src="images/payu.png" /></li>
+                <li><img src="images/ebucks.png" /></li>
+                <li><img src="images/standard-bank.png" /></li>
+                <li><img src="images/mimoney.png" /></li>
+            </ul>
+        </div>
+        <div class="contact-terms">
+            <p><a href="#">Email</a> or Telephone 0861 (0861 525242) | Contact centre hours: Weekdays 8:00 - 18:00 & Saturdays 8:00 -14:00
+                <br><a href="#">Terms and conditions </a>| 1999 - 2012
+            </p>
+            <img src="images/verisign.png" />
+
+        </div>
+
+        <footer>
+
+</body>
+
+</html>
